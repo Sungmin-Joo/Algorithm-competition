@@ -1,4 +1,4 @@
-﻿#include <stdio.h> \
+﻿#include <stdio.h>
 
 int main(){
 	int go, back, peek, one_day, temp, mod, Day;
