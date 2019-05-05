@@ -1,0 +1,7 @@
+[package]
+name = "백준_1000번_A_plus_B"
+version = "0.1.0"
+authors = ["joo"]
+edition = "2018"
+
+[dependencies]

@@ -1,0 +1,5 @@
+[package]
+
+name = "hello_test"
+version = "0.0.1"
+authors = [ "Joo <wntjdals2015@naver.com>" ]
