@@ -1,0 +1,7 @@
+[package]
+name = "백준_10718번_We_love_kriii"
+version = "0.1.0"
+authors = ["joo"]
+edition = "2018"
+
+[dependencies]
