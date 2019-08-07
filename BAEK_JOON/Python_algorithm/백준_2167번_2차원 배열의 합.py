@@ -1,16 +1,14 @@
 import sys
-n,m=map(int,sys.stdin.readline().split())
-arr=[]
-arr.append([0 for i in range(m+1)])
-d=[]
-d.append([0]*(m+1))
+IN=sys.stdin.readline
+n,m=map(int,IN().split())
+arr=[[0]*-~m]
+for i in range(n):
+    arr.append([0] + list(map(int,IN().split())))
 for i in range(1,n+1):
-    arr.append([0] + list(map(int,sys.stdin.readline().split())))
-    d.append([0]*(m+1))
+    w=arr[i-1]
     for j in range(1,m+1):
-        d[i][j]=d[i][j-1]+d[i-1][j]-d[i-1][j-1]+arr[i][j]
+        arr[i][j]+=w[j]+arr[i][j-1]-w[j-1]
 
-n=int(input())
-for z in range(n):
-    i,j,x,y=map(int,input().split())
-    print(d[x][y]-d[i-1][y]-d[x][j-1]+d[i-1][j-1])
+for z in range(int(input())):
+    i,j,x,y=map(int,IN().split())
+    print(arr[x][y]-arr[i-1][y]-arr[x][j-1]+arr[i-1][j-1])
