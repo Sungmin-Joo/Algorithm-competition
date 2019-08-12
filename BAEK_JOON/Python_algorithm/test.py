@@ -1,1 +1,0 @@
-print('test in ubuntu')
