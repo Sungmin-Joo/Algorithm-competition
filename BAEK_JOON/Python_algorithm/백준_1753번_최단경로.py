@@ -7,7 +7,6 @@ V, E = map(int, input().split())
 K = int(input())
 dp = [INF]*(V+1)
 heap = []
-visit = [0]*V
 graph = [[] for _ in range(V + 1)]
 
 def Dijkstra(start):
