@@ -1,0 +1,6 @@
+a, b = input().split()
+a_m = int(a.replace('6','5'))
+b_m = int(b.replace('6','5'))
+a_x = int(a.replace('5','6'))
+b_x = int(b.replace('5','6'))
+print(a_m + b_m, a_x + b_x)
